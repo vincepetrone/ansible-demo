@@ -9,4 +9,6 @@
       - tcpdump
       - lsof
       - nmap
+      - vim-enhanced
+      - zsh
       state: present

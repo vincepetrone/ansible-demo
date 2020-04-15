@@ -1,12 +1,13 @@
 ---
 - name: debug testing
-  hosts: Test
+  hosts: Vintest
   gather_facts: False
   vars:
   - names:
     - Vinny
     - Bob
     - Alice
+    - Robert
   tasks:
   - name: debug
     debug:
