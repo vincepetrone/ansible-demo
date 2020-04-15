@@ -1,0 +1,14 @@
+---
+- name: debug testing
+  hosts: Test
+  gather_facts: False
+  vars:
+  - names:
+    - Vinny
+    - Bob
+    - Alice
+  tasks:
+  - name: debug
+    debug:
+      msg: Hello {{ item }}, nice to meet you.
+    loop: "{{ names }}"

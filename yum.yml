@@ -1,0 +1,12 @@
+- name: Install Red Hat Packages
+  hosts: Test
+  gather_facts: False
+  become: True
+  tasks:
+  - name: Yum install
+    yum:
+      name:
+      - tcpdump
+      - lsof
+      - nmap
+      state: present
