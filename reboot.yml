@@ -1,0 +1,10 @@
+---
+- name: Reboot Servers
+  hosts: Vintest
+  become: True
+  gather_facts: False
+  tasks:
+  - name:
+    reboot:
+      reboot_timeout: 480
+
