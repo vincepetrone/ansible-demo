@@ -6,5 +6,5 @@
   tasks:
   - name:
     reboot:
-      reboot_timeout: 480
+      reboot_timeout: 300
 
