@@ -1,0 +1,10 @@
+- name: Fix rhsmd daily cron job
+  hosts: BannerTest
+  gather_facts: False
+  become: True
+  tasks:
+  - name: Fix a bug in the daily cron file for rhsmd
+    lineinfile:
+      path: /etc/cron.daily/rhsmd
+      regexp: '^if.*config'
+      line: 'if [ -n "$config" ]; then'
