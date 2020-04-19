@@ -1,5 +1,5 @@
 - name: Fix rhsmd daily cron job
-  hosts: BannerTest
+  hosts: Vintest
   gather_facts: False
   become: True
   tasks:
