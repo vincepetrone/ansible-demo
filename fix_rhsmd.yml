@@ -8,3 +8,4 @@
       path: /etc/cron.daily/rhsmd
       regexp: '^if.*config'
       line: 'if [ -n "$config" ]; then'
+    when: ansible_distribution_version == "7.8"
