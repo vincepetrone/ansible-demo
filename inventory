@@ -14,3 +14,7 @@ localhost
 [local:vars]
 ansible_connection=local
 ansible_python_interpreter=/Users/vpetrone/.pyenv/shims/python
+
+[windows]
+vincetest0
+vincetest1
