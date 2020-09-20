@@ -6,3 +6,10 @@ vincetest3
 xedb19u
 xedb19w
 xedb19t
+
+[local]
+localhost
+
+[local:vars]
+ansible_connection=local
+ansible_python_interpreter=/Users/vpetrone/.pyenv/shims/python
