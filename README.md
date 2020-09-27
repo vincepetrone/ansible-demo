@@ -1,6 +1,6 @@
 # ansible-demo
 
-A few simple example ansible playbooks.
+A few simple examples ansible playbooks.
 
 - **debug.yml** - print output using variables.
 - **yum_install.yml** - install a few Red Hat packages.
