@@ -1,0 +1,10 @@
+257;Microsoft-Windows-Defrag;error was encountered
+1008;Perflib;'Perflib' cannot be found
+2005;PerfNet;'PerfNet' cannot be found
+5973;Microsoft-Windows-Immersive-Shell;Activation of app Microsoft.Windows.Cortana
+10010;DCOM;'DCOM' cannot be found
+10016;DCOM;'DCOM' cannot be found
+*;CertEnroll;The description for Event ID '-2108030919' in Source 'CertEnroll' cannot be found.
+*;SQLISPackage120;Package "TimeproBackup" failed.
+137;Ntfs;The default transaction resource manager on volume
+12289;VSS;generic_floppy_drive
