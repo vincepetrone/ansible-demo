@@ -18,3 +18,7 @@ ansible_python_interpreter=/Users/vpetrone/.pyenv/shims/python
 [windows]
 vincetest0
 vincetest1
+fallback
+obformt
+obappsrvd
+moondial

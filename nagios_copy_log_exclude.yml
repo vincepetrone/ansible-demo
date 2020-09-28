@@ -1,0 +1,12 @@
+---
+- name: Push Nagios NCPA Config File
+  hosts: windows
+  gather_facts: False
+  become: False
+
+  tasks:
+
+  - name: copy nagios eventlog exclude file
+    win_copy:
+      src: /Volumes/c$/sysadmin/ncpa_agent_install_ps/nagios_ncpa/plugins/check_eventlog_exclude.txt 
+      dest: 'C:\Program Files (x86)\Nagios\NCPA\plugins\check_eventlog_exclude.txt'
