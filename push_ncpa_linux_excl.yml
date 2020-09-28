@@ -1,12 +1,21 @@
 ---
-- name: Push Nagios NCPA Config File
-  hosts: windows
+- name: Push Nagios NCPA log exclude files to linux hosts
+  hosts: linux
   gather_facts: False
-  become: False
+  become: True
+  vars:
+    files:
+      - check_logfiles_messages.cfg
+      - check_logfiles_secure.cfg
+      - check_logfiles_secure_logon.cfg
 
   tasks:
 
-  - name: copy nagios eventlog exclude file
-    win_copy:
-      src: /Volumes/c$/sysadmin/ncpa_agent_install_ps/nagios_ncpa/plugins/check_eventlog_exclude.txt 
-      dest: 'C:\Program Files (x86)\Nagios\NCPA\plugins\check_eventlog_exclude.txt'
+    - name: Copy file with owner and permissions
+      copy:
+        src: ./files/{{ item }}
+        dest: /usr/local/ncpa/plugins/{{ item }}
+        owner: root
+        group: nagios
+        mode: '0755'
+      loop: "{{ files }}"
