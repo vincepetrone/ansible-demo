@@ -11,7 +11,7 @@
 
   tasks:
 
-    - name: Copy file with owner and permissions
+    - name: Copy exclude files
       copy:
         src: ./files/{{ item }}
         dest: /usr/local/ncpa/plugins/{{ item }}
