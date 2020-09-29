@@ -1,6 +1,6 @@
 ---
 - name: Push Nagios NCPA log exclude files to linux hosts
-  hosts: linux
+  hosts: Linux
   gather_facts: False
   become: True
   vars:

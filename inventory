@@ -15,7 +15,7 @@ localhost
 ansible_connection=local
 ansible_python_interpreter=/Users/vpetrone/.pyenv/shims/python
 
-[windows]
+[Windows]
 vincetest0
 vincetest1
 fallback
@@ -23,7 +23,7 @@ obformt
 obappsrvd
 moondial
 
-[linux]
+[Linux]
 vincetest2
 vincetest7
 

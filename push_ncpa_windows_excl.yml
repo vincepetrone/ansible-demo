@@ -1,6 +1,6 @@
 ---
 - name: Push Nagios NCPA Config File
-  hosts: windows
+  hosts: Windows
   gather_facts: False
   become: False
 
