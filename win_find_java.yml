@@ -1,0 +1,35 @@
+--- 
+- name: Display Java JRE instances
+  hosts: Windows
+  gather_facts: False
+
+  tasks:
+
+  - name: search for instances of rt.jar
+    win_shell: | 
+      $drives = (get-psdrive | where-object Used -gt 0).Root
+      foreach ($drive in $drives ) {
+            $search_path = $drive + "*"
+            $files = (get-childitem "$search_path" -recurse -ErrorAction SilentlyContinue | Where Name -eq "rt.jar").FullName
+            foreach ($file in $files) {
+                  $vendor_line = (sls -Path $file -Pattern "^Implementation-Vendor").Line
+                  if ($vendor_line) {
+                        $vendor = $vendor_line.split(":")[1]
+                  } else { 
+                        $vendor = "NULL"
+                  }
+                  $version_line = (sls -Path $file -Pattern "^Implementation-Version").Line
+                  if ($version_line) {
+                        $version = $version_line.split(":")[1]
+                  } else {
+                        $version = "NULL"
+                  }
+                  $Servername = ($env:ComputerName).ToLower()
+                  Write-host -Foregroundcolor green "$Servername ; $file ; $vendor ; $version"
+          }
+      }
+    register: java
+
+  - name: debug
+    debug:
+      var: java.stdout_lines

@@ -1,0 +1,38 @@
+---
+- name: Display .NET Framework version installed
+  hosts: Windows
+  gather_facts: False
+
+  tasks:
+
+  - name: Search for .NET Framework release 
+    win_shell: | 
+       $Release = (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release
+       if ($Release -eq 378389) {
+             write-host -ForegroundColor green ".NET Framework version is 4.5"
+         } elseif ($Release -eq 378758) {
+             write-host -ForegroundColor green ".NET Framework version is 4.5.1"
+         } elseif ($Release -eq 379893) {
+             write-host -ForegroundColor green ".NET Framework version is 4.5.2"
+         } elseif ($Release -gt 393297) {
+             write-host -ForegroundColor green ".NET Framework version is 4.6"
+         } elseif ($Release -gt 394271) {
+             write-host -ForegroundColor green ".NET Framework version is 4.6.1"
+         } elseif ($Release -gt 394806) {
+             write-host -ForegroundColor green ".NET Framework version is 4.6.2"
+         } elseif ($Release -gt 460805) {
+             write-host -ForegroundColor green ".NET Framework version is 4.7"
+         } elseif ($Release -gt 461310) {
+             write-host -ForegroundColor green ".NET Framework version is 4.7.1"
+         } elseif ($Release -gt 461814) {
+             write-host -ForegroundColor green ".NET Framework version is 4.7.2"
+         } elseif ($Release -gt 528049) {
+             write-host -ForegroundColor green ".NET Framework version is 4.8"
+         } else {
+             write-host -ForegroundColor red ".NET Framework 4.5 or higher is not installed."
+         }
+    register: dotnet
+
+  - name: debug
+    debug:
+      var: dotnet.stdout
