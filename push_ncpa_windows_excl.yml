@@ -6,7 +6,10 @@
 
   tasks:
 
-  - name: copy nagios eventlog exclude file
+  - name: copy nagios exclude files
     win_copy:
-      src: ./files/check_eventlog_exclude.txt 
-      dest: 'C:\Program Files (x86)\Nagios\NCPA\plugins\check_eventlog_exclude.txt'
+      src: ./files/{{ item }}
+      dest: 'C:\Program Files (x86)\Nagios\NCPA\plugins\{{ item }}'
+    loop:
+      - check_eventlog_exclude.txt
+      - logon_exclude.txt

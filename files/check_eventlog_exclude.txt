@@ -8,3 +8,9 @@
 *;SQLISPackage120;Package "TimeproBackup" failed.
 137;Ntfs;The default transaction resource manager on volume
 12289;VSS;generic_floppy_drive
+14151;MSSQLSERVER;Replication-Replication Merge Subsystem: agent
+36874;Schannel;none of the cipher suites supported by the client application are supported by the server
+36871;Schannel;A fatal error occurred while creating an SSL client credential
+36888;Schannel;A fatal alert was generated and sent to the remote endpoint
+137;Ntfs;The default transaction resource manager on volume 
+*;SQLVDI;No mapping between account names and security IDs was done
