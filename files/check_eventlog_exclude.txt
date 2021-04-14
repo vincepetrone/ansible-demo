@@ -15,3 +15,7 @@
 36888;Schannel;A fatal alert was generated and sent to the remote endpoint
 137;Ntfs;The default transaction resource manager on volume 
 *;SQLVDI;No mapping between account names and security IDs was done
+24582;SQLWRITER;Failed to create VDS object
+513;Microsoft-Windows-CAPI2;Cryptographic Services failed while processing the OnIdent
+15;disk;is not ready for access yet
+1000;Application Error;Faulting application name: CsgMXDisconnectedNumbers.exe
