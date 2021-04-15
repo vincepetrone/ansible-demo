@@ -80,3 +80,17 @@ xedb19p
 xedb19t
 xedb19u
 xedb19w
+
+[Frank]
+emspdb
+emstdb
+emspapp
+emstapp
+folly
+
+[Frank:vars]
+ansible_user=vpetrone
+ansible_port=5985
+ansible_connection=winrm
+ansible_winrm_transport=ntlm
+ansible_winrm_server_cert_validation=ignore
