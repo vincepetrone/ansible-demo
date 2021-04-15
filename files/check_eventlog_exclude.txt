@@ -21,3 +21,4 @@
 15;disk;is not ready for access yet
 1000;Application Error;Faulting application name: CsgMXDisconnectedNumbers.exe
 18056;MSSQLACT7;The client was unable to reuse a session
+2006;PerfNet;The local computer may not have the necessary registry information or message DLL files to display the message
