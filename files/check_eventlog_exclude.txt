@@ -23,3 +23,6 @@
 18056;MSSQLACT7;The client was unable to reuse a session
 2006;PerfNet;The local computer may not have the necessary registry information or message DLL files to display the message
 17063;MSSQLSERVER;ERROR REMOVING OLD BACKUP FILES
+*;Hyland.Core.Scheduler.NTService;Error accessing file
+*;Hyland.Core.Scheduler.NTService;Oracle.ManagedDataAccess.Client.OracleException
+7023;Service Control Manager;The Hyland Unity Scheduler - System Maintenance service terminated with the following error
