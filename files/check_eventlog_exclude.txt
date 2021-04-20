@@ -26,3 +26,4 @@
 *;Hyland.Core.Scheduler.NTService;Error accessing file
 *;Hyland.Core.Scheduler.NTService;Oracle.ManagedDataAccess.Client.OracleException
 7023;Service Control Manager;The Hyland Unity Scheduler - System Maintenance service terminated with the following error
+1026;.NET Runtime;CsgMXDisconnectedNumbers.exe
