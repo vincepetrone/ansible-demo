@@ -30,3 +30,5 @@
 *;Hyland.Core.Scheduler.NTService;File not found on platter
 *;Hyland.Core.Scheduler.NTService;Error accessing file
 *;Hyland.Core.Scheduler.NTService;Oracle.ManagedDataAccess.Client.OracleException
+*;Hyland.Core.Scheduler.NTService;Document file not found on disk group volume
+*;Hyland.Core.Scheduler.NTService;Failed to load task configuration
