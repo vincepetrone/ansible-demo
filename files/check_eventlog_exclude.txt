@@ -32,3 +32,4 @@
 *;Hyland.Core.Scheduler.NTService;Oracle.ManagedDataAccess.Client.OracleException
 *;Hyland.Core.Scheduler.NTService;Document file not found on disk group volume
 *;Hyland.Core.Scheduler.NTService;Failed to load task configuration
+4;PHP-7.2.34;The local computer may not have the necessary registry information or message DLL files to display the message
