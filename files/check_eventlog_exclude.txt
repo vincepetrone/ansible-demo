@@ -33,3 +33,4 @@
 *;Hyland.Core.Scheduler.NTService;Document file not found on disk group volume
 *;Hyland.Core.Scheduler.NTService;Failed to load task configuration
 4;PHP-7.2.34;The local computer may not have the necessary registry information or message DLL files to display the message
+1008;Microsoft-Windows-CertificateServicesClient-CredentialRoaming;Certificate Services Client: Credential Roaming will not be performed because the number of tokens in the Local Store has exceeded the limit
