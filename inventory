@@ -14,6 +14,7 @@ ansible_python_interpreter=/Users/vpetrone/.pyenv/shims/python
 [Windows]
 brutus
 camelot
+canyon
 dfep
 dfet
 eldorado
@@ -48,7 +49,8 @@ ragu
 smcserv
 sundial
 temptrak
-#tieback
+tieback
+trek
 vincetest0
 vincetest1
 vincetest5
