@@ -25,12 +25,8 @@
 17063;MSSQLSERVER;ERROR REMOVING OLD BACKUP FILES
 7023;Service Control Manager;The Hyland Unity Scheduler - System Maintenance service terminated with the following error
 1026;.NET Runtime;CsgMXDisconnectedNumbers.exe
-*;Hyland.Core.Scheduler.NTService;Workstation Monitoring disabled for workstation
-*;Hyland.Core.Scheduler.NTService;Could not find a batch associated with the document
-*;Hyland.Core.Scheduler.NTService;File not found on platter
-*;Hyland.Core.Scheduler.NTService;Error accessing file
-*;Hyland.Core.Scheduler.NTService;Oracle.ManagedDataAccess.Client.OracleException
-*;Hyland.Core.Scheduler.NTService;Document file not found on disk group volume
-*;Hyland.Core.Scheduler.NTService;Failed to load task configuration
 4;PHP-7.2.34;The local computer may not have the necessary registry information or message DLL files to display the message
 1008;Microsoft-Windows-CertificateServicesClient-CredentialRoaming;Certificate Services Client: Credential Roaming will not be performed because the number of tokens in the Local Store has exceeded the limit
+36887;Schannel;A fatal alert was received from the remote endpoint
+*;Hyland.Core.Scheduler.NTService;.*
+1002;Microsoft-Windows-CertificateServicesClient-CredentialRoaming;Credential Roaming failed to read from the Local Store
