@@ -83,14 +83,22 @@ xedb19t
 xedb19u
 xedb19w
 
-[Frank]
-emspdb
-emstdb
-emspapp
-emstapp
-folly
+[FrankLinux]
+bt
+ms
+jd
+bp
+md
+phd
+skyline
 
-[Frank:vars]
+[FrankWindows]
+cwtest
+cwapp
+cwdb
+refund
+
+[FrankWindows:vars]
 ansible_user=vpetrone
 ansible_port=5985
 ansible_connection=winrm
