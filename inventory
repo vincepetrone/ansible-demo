@@ -15,6 +15,9 @@ ansible_python_interpreter=/Users/vpetrone/.pyenv/shims/python
 brutus
 camelot
 canyon
+cwapp
+cwdb
+cwtest
 dfep
 dfet
 eldorado
@@ -46,6 +49,7 @@ pesto
 prego
 punt
 ragu
+refund
 smcserv
 sundial
 temptrak
@@ -64,6 +68,8 @@ ansible_winrm_server_cert_validation=ignore
 
 [Linux]
 bosch
+bp
+bt
 callback
 callback2
 davis
@@ -73,8 +79,13 @@ dewey
 dhs
 dob
 dobt
+jd
 jimi
+md
 miles
+ms
+phd
+skyline
 vincetest2
 vincetest3
 vincetest7
@@ -82,25 +93,3 @@ xedb19p
 xedb19t
 xedb19u
 xedb19w
-
-[FrankLinux]
-bt
-ms
-jd
-bp
-md
-phd
-skyline
-
-[FrankWindows]
-cwtest
-cwapp
-cwdb
-refund
-
-[FrankWindows:vars]
-ansible_user=vpetrone
-ansible_port=5985
-ansible_connection=winrm
-ansible_winrm_transport=ntlm
-ansible_winrm_server_cert_validation=ignore
