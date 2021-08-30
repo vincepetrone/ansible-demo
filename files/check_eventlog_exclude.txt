@@ -1,6 +1,6 @@
 257;Microsoft-Windows-Defrag;error was encountered
 *;Perflib;'Perflib' cannot be found
-2005;PerfNet;'PerfNet' cannot be found
+*;PerfNet;'PerfNet' cannot be found
 5973;Microsoft-Windows-Immersive-Shell;Activation of app Microsoft.Windows.Cortana
 10010;DCOM;'DCOM' cannot be found
 10016;DCOM;'DCOM' cannot be found
