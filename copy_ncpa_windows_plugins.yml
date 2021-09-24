@@ -1,0 +1,19 @@
+---
+- name: Copy Nagios NCPA Plugins
+  hosts: Windows
+  gather_facts: False
+  become: False
+
+  tasks:
+
+  - name: copy nagios plugins
+    win_copy:
+      src: ./files/{{ item }}
+      dest: 'C:\Program Files (x86)\Nagios\NCPA\plugins\{{ item }}'
+    loop:
+      - check_backups.ps1
+      - check_disk_load.ps1
+      - check_eventlog.ps1
+      - check_windows_updates.ps1
+      - check_windows_version.ps1
+      - logon_audit.ps1
