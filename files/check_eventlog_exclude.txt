@@ -30,3 +30,4 @@
 36887;Schannel;A fatal alert was received from the remote endpoint
 *;Hyland.Core.Scheduler.NTService;.*
 1002;Microsoft-Windows-CertificateServicesClient-CredentialRoaming;Credential Roaming failed to read from the Local Store
+10036;DCOM;172.28.4.39
