@@ -1,6 +1,6 @@
 ---
 - name: Display .NET Framework version installed
-  hosts: Windows
+  hosts: all
   gather_facts: False
 
   tasks:
