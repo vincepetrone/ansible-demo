@@ -32,3 +32,4 @@
 *;Hyland.Core.Scheduler.NTService;.*
 1002;Microsoft-Windows-CertificateServicesClient-CredentialRoaming;Credential Roaming failed to read from the Local Store
 10036;DCOM;172.28.4.39
+40;Microsoft-Windows-Eventlog;The event logging service encountered an error when attempting to apply one or more policy settings

@@ -12,4 +12,4 @@
       dest: 'C:\Program Files (x86)\Nagios\NCPA\plugins\{{ item }}'
     loop:
       - check_eventlog_exclude.txt
-      - logon_exclude.txt
+    #  - logon_exclude.txt
