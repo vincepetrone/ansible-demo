@@ -1,6 +1,6 @@
 --- 
 - name: Display Java JRE instances
-  hosts: Windows
+  hosts: all
   gather_facts: False
 
   tasks:
