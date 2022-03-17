@@ -1,6 +1,6 @@
 ---
 - name: Copy Nagios NCPA Plugins
-  hosts: Windows
+  hosts: all
   gather_facts: False
   become: False
 

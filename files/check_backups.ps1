@@ -30,16 +30,16 @@ if (-not (Test-Path C:\"Program Files"\VERITAS\NetBackup\bin\bpclimagelist.exe))
     exit $returnStateWarning
 }
 
-### Make sure Netbackup client can communicate with Callback
-if (-not (C:\"Program Files"\VERITAS\NetBackup\bin\bpclntcmd.exe -pn 2>$null)) {
-    Write-Host "WARNING - Netbackup client on $clientName gets no response from Callback. Contact Vinny to resolve issue with missing host certificate."
-    exit $returnStateWarning
-}
-
 ### Check to see if Netbackup is offline or down for maintenance
 if (-not (Test-NetConnection -computername callback -port 13724 -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationLevel Quiet)) {
     Write-Host "ATTENTION - Netbackup is currently offline or down for maintenance"
     exit $returnStateOK
+}
+
+### Make sure Netbackup client can communicate with Callback
+if (-not (C:\"Program Files"\VERITAS\NetBackup\bin\bpclntcmd.exe -pn 2>$null)) {
+    Write-Host "WARNING - Netbackup client on $clientName gets no response from Callback. Contact Vinny to resolve issue with missing host certificate."
+    exit $returnStateWarning
 }
 
 ### Use bpclimagelist.exe program to query the NB catalog for a backup image created in the past 24 hours
