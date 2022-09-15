@@ -1,7 +1,7 @@
 ---
 - name: Push Nagios NCPA Config File
   hosts: all
-  gather_facts: False
+  gather_facts: True
   become: False
 
   tasks:
