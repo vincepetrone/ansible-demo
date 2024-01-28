@@ -1,6 +1,6 @@
 ---
 - name: debug testing
-  hosts: local
+  hosts: localhost
   gather_facts: False
   vars:
   - names:
